@@ -12,11 +12,15 @@ symbol (new in ES6) =>  used for uniqueness
     NON PRIMITIVE DATA TYPE 
 object => { }
 array => [ ]
-
+function
 */
 
 const rollNo  = 14.00;  // number 
 let studentName = "Tushar" //String 
+
+const id = Symbol("123") ;
+const id2 = Symbol("123") ;
+console.log(id === id2);  // false :  return value is not same because symbol are uniques 
 
 console.log(typeof rollNo);   
 //typeof is used to get the datatyp of the variable 
