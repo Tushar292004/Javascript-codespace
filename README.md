@@ -11,13 +11,13 @@ PRIMITIVE :  ( 7 types ) (Call by value) : Data is copied and showed.
 1. String (Sequence of Characters)
 2. Number (Integer, Float)
 3. Boolean
-4. Null
+4. Null : typeofValue = Object
 5. Undefined
 6. Symbol : const id  = Symbol("123")
-7. BigInt  :  conat bigNumber = 2376482734n (write n at the end and it will be a big int) : typevalue = undefined
+7. BigInt  :  conat bigNumber = 2376482734n (write n at the end and it will be a big int) : typeValue = undefined
 
-NON PRIMITVE / Reference : (call by reference) Reference is given
+NON PRIMITVE / Reference : (call by reference) Reference is given : typeofValue is always object
 1. Object : {} (key:value pairs) 
 2. Array : []
-3. Functions 
+3. Functions   (object Function)
 
