@@ -21,3 +21,4 @@ NON PRIMITVE / Reference : (call by reference) Reference is given : typeofValue 
 2. Array : []
 3. Functions   (object Function)
 
+STACK (primitive) copy of the variable given and HEAP (non primitive) reference given 
