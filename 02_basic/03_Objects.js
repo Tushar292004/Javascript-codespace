@@ -31,6 +31,7 @@ jsUser.greeting = function(){
 }
 console.log(jsUser.greeting());
 
+
 // singelton (Constructor method)
 const tinderUser = new Object() ;
 tinderUser.userId = "42612040";
