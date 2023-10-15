@@ -27,9 +27,10 @@ function one() {
 }
 one()
 
-
 // 
 const addTwo = function(num) {
     return num + 2;
 }
 addTwo(5)
+
+// Hoisting  is a Js Concept 
