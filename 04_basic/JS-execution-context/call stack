@@ -1,0 +1,53 @@
+JAVASCRIPT EXECUTION CONTEXT 
+
+1st global execution contect is formed.
+and the location is reffered by "this" keyword.
+Each env execution context is different from others.
+
+Execution Context Stack:
+- Global Execution Context (global enviornmente)
+- Eval code Execution Context
+- Function Execution Context
+
+Code runs is 2 phases : 
+1 - Memory Creation Phase (Creation Phase) : Variable memory spaces (undefined value) and function declaration are stored in memory 
+
+2 - Execution Phase  :
+Values are inserted and functions are executed .
+
+
+EXAMPLE  :  
+
+Js Code - 
+let val1 = 10 ; 
+let val2 = 5 ;
+function addNum(num1, num2){
+    let total = num1 + num2 ; 
+    return total ; 
+}
+
+let result1 = addNum(val1, val2) ;
+let result2 = addNum(10, 2) ;
+
+Steps Of Execution -
+
+1st : Global Execution context  created (this)
+
+2nd : Memory Phase - 
+            val1 - undefined 
+            val2 - undefined
+            addNum - function defination 
+            result1 - undefined
+            result2 - undefined
+
+3rd : Execution Phase -
+            val1 - 10
+            val2 - 5
+            addNum - function call with parameters : 
+                               Sandbox {new variable env + 
+                                execution thread +
+                                value will be returned to the global execution context}
+
+
+CALL STACK : 
+In WEB u see
