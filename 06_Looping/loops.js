@@ -16,17 +16,16 @@ for (let index = 0; index < array.length; index++) {
     console.log(array[index]);
 }
 
-//while 
+//while   
 let index = 0;
 while (index < 5) {
     console.log("Hayee");
     index ++ ;
 }
 
-//Do While 
+//Do While  :  least 1 execution 
 do {
     console.log('Hello');
     index ++ ;
 }
 while (index < 0)
-

@@ -1,10 +1,12 @@
-// forof 
+// Sample of high oreder array loops in JS
+
+// for-of 
 const arr = [1,2,3,4,5] ;
 for (const i of arr) {
     console.log(i);
 }
 
-// Maps  : always have unique values and not iterable forin will not work
+// Maps  : always have unique values and not iterable for-in will not work
 const map = new Map()
 map.set('name', 'John')
 map.set('age', 30)
@@ -15,7 +17,7 @@ for (const [iterator, value] of map) {
     console.log(iterator, " :- ", value);
 }
 
-// forin 
+// for-in 
 const obj1 = {
     js: "javascript",
     py: "python",
@@ -25,7 +27,7 @@ for (const key in obj1) {
     console.log(key , " : ", obj1[key]);
 }
 
-//for each  uses call back func whichi dont have name 
+//for each  uses call back func which i dont have name 
 let array = ['a','b','c'];
 array.forEach((value, index)=>{
     console.log(`${index}: ${value}`);
@@ -36,6 +38,7 @@ function print(i){
     console.log(i);
 }
 array2.forEach(print); // just giving the refference of function not executing it 
+//reference means {functionName} executing means {functionName()} 
 
 const myCoding = [
  {
