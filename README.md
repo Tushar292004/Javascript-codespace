@@ -21,4 +21,14 @@ NON PRIMITVE / Reference : (call by reference) Reference is given : typeofValue 
 2. Array : []
 3. Functions   (object Function)
 
-STACK (primitive) copy of the variable given and HEAP (non primitive) reference given 
+STACK (primitive) copy of the variable given and HEAP (non primitive) reference given .
+
+
+DOM : Document Object Model
+DOCUMENT > HTML  >  HEAD > TITLE > TEXT-NODE {text-value}
+                META  > ATTRIBUTE 
+         BODY > DIV [attribute] > H1, H2, P,  BUTTON ....[textnode, attribute]
+
+innerHTML : returns whole HTML element 
+innerTEXT : shows only client side visible text 
+textContent : shows all the text , hidden one also 
