@@ -18,5 +18,18 @@
       <p>Lorem ipsum dolor sit amet.</p>
     </div>
   </body>
-  
+<script>
+  const box = document.createElement('div');
+  box.className = "main";
+  box.id = Math.random() * 10 
+  console.log(box.id)
+  console.log(box);
+  box.setAttribute("title", "generated title")
+  box.style.backgroundColor = "orange"
+  box.style.padding = "12px"
+  box.innerText = "Chai Aur Code"
+  const addText = document.createTextNode("chai aur code ")
+  box.appendChild(addText)
+  document.body.appendChild(box)
+</script>
 </html>
