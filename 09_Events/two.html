@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1 id="body">Hello Sister</h1>
+    <button id="stop">Stop</button>  
+</body>
+<script>
+    const body = document.getElementById('body')
+    const toStop = document.getElementById('stop');
+    
+    const changeText = function(){
+        body.innerHTML = "Hello Brother"
+        console.log("H1 CHANGED");
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    toStop.addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+    })
+</script>
+</html>

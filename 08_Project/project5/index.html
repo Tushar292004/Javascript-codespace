@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlimited Colors</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <style>
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button {
+      width: 100px;
+      margin: 5px;
+    }
+  </style>
+  <body style="background-color: #212121; color: #fff">
+    <nav>
+      <a href="/08_Project/index.html">Home</a>
+      <a
+        href="https://www.linkedin.com/in/tushar-chandak-b2b943257/"
+        target="_blank"
+        >LinkDn</a
+      >
+    </nav>
+    <div id="container">
+      <h1>RANDOM BACKGROUND COLOR CHANGER</h1>
+      <button id="start" class="button">START</button>
+      <button id="stop" class="button">STOP</button>
+    </div>
+  </body>
+  <script>
+    const randomColor = function () {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      document.body.style.backgroundColor = color;
+      console.log(color);
+    };
+
+    let interval;
+    const start = document.getElementById("start");
+    const stop = document.getElementById("stop");
+
+    start.addEventListener("click", function () {
+      if(!interval){
+        interval = setInterval(randomColor, 1000);
+      }
+    });
+
+    stop.addEventListener("click", function () {
+      clearInterval(interval);
+      interval = null
+    });
+  </script>
+</html>
