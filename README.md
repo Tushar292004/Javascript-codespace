@@ -1,5 +1,56 @@
 # Javascript-codespace
 
+Javascript is scripting language consisting of 3 main parts : 
+
+1: ECMA Script for core functionality
+2: Document Object Model (DOM) interaction with elements on webpage
+3: Browser Object Model (BOM)  provides browser API(Application Programming Interface) to interact with browser itself.
+
+JavaScript Engine is a web browser component for interpreting and executing the JavaScript code.
+
+It includes : 
+Parser =>  analyzes the code 
+Compiler => convert it into machine code (Low Level Language)
+Interpreter => to run the complie code 
+
+Engines: V8 for chrome , JavaScript core for Safari, SpiderMonkey for FireFox
+
+Client-side : 
+When JavaScript is used on a web page, it is executed in web browsers, serving as a client-side language.
+
+Server-side JavaScript :
+JavaScript server-side environment is Node.js. Unlike client-side JavaScript, server-side JavaScript executes on the server and allows you to access databases, file systems, etc.
+
+History : 
+In 1995, JavaScript was developed by Brendan Eich, a Netscape developer.
+1st name :  Mocha 
+2nd name :  LiveScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
 
 Data Types Interview  : 
